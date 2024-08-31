@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.getElementById('searchButton').addEventListener('click', async function() {
         let inputCountry = document.getElementById("country").value;
-        let api_url = `https://universities.hipolabs.com/search?country=${inputCountry}`;
+        let api_url = `http://universities.hipolabs.com/search?country=${inputCountry}`;
 
         try {
             let info = await get_info(api_url);
